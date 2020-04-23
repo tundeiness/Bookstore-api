@@ -3,7 +3,15 @@ class Api::V1::BooksController < Api::V1::ApiController
 
   def index
     @books = Book.all
+    render json: @books
+    # @books = params[:category] ? Book.joins(:category).where(category: {category: params[:category]}) : Book.all
+    # render json: @books
+  end
 
+  def categorized
+    # book = Book.all
+    @category = params[:book]
+    @books = Book.categorized(category_params)
     render json: @books
   end
 
@@ -35,10 +43,14 @@ class Api::V1::BooksController < Api::V1::ApiController
 
   private
     def set_book
-      @book = Book.find(params[:id])
+      @book ||= Book.find(params[:id])
     end
 
     def book_params
       params.require(:book).permit(:title, :category)
+    end
+
+    def category_params
+      params.slice(:category)
     end
 end

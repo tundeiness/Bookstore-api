@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   # https://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      resources :books
+      resources :books do
+        collection do
+          get :categorized
+        end
+      end
     end
   end
 end
