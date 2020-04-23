@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # https://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      resources :books
+      resources :books, only: %i[index create destroy]
     end
   end
 end
