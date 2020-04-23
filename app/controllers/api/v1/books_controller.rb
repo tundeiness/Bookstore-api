@@ -3,20 +3,22 @@ class Api::V1::BooksController < Api::V1::ApiController
 
   def index
     # @books = Book.all
-     @books = Book.where(nil)
-     @books = @books.categorized(params[:category]) if params[:category].present?
+    #  @books = Book.where(nil)
+    #  @books = @books.categorized(params[:category]) if params[:category].present?
     # render json: @books
-    # @books = params[:category] ? Book.joins(:category).where(category: {category: params[:category]}) : Book.all
+    # @books = params[:category] ? Book.joins(:category).where(category:
+    # {category: params[:category]}) : Book.all
+    @books = params[:category] ? Book.categorized(params[:category]) : Book.all
      render json: @books
 
   end
 
-  def categorized
-    # book = Book.all
-    @category = params[:book]
-    @books = Book.categorized(category_params)
-    render json: @books
-  end
+  # def categorized
+  #   # book = Book.all
+  #   @category = params[:book]
+  #   @books = Book.categorized(category_params)
+  #   render json: @books
+  # end
 
   def show
     render json: @book

@@ -1,6 +1,5 @@
 class Book < ApplicationRecord
   validates :title, :category, presence: true
 
-  scope :categorized, -> (category) { where category: category }
-
+  scope :categorized, -> (category) { where category: category.titleize}
 end
