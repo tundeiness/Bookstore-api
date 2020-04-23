@@ -2,7 +2,9 @@ class Api::V1::BooksController < Api::V1::ApiController
   before_action :set_book, only: %i[show update destroy]
 
   def index
-    @books = Book.all
+    # @books = Book.all
+    @books = Book.where(nil)
+    @books = @books.categorized(params[:category]) if params[:category].present?
     render json: @books
     # @books = params[:category] ? Book.joins(:category).where(category: {category: params[:category]}) : Book.all
     # render json: @books
