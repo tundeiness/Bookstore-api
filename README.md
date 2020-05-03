@@ -56,7 +56,7 @@ $ rails server
    - Github: [@tundeiness](https://github.com/tundeiness)
    - LinkedIn: [Tunde Oretade](https://www.linkedin.com/in/tundeoretade/)
 
-https://github.com/tundeiness/Bookstore-api
+
 
 ## 🤝 Contributing
 
