@@ -1,0 +1,13 @@
+linters:
+  rubocop:
+    display_cop_names: true
+files:
+  ignore:
+    - "Guardfile"
+    - "Rakefile"
+    - "db/schema.rb"
+    - "db/migrate/*.rb"
+    - ".bundle/**/*"
+    - "bin/**/*"
+    - "vendor/**/*"
+    - "**/config/**/*"
