@@ -53,6 +53,7 @@ The Bookstore the following functions:
 This project was tested with:
 
 * RSpec
+* Factory-Bot
 * Capybara
 
 
