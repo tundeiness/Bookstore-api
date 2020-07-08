@@ -1,20 +1,60 @@
 
-<h1 align="center">React&Redux Bookstore API 👋</h1>
+<h1 align="center">React & Redux Bookstore API 👋</h1>
 
-<p align="center">This is the Rails backend of the bookstore app built with React & Redux at the frontend.</p><br />
+<p align="center">This is the Rails backend of the Bookstore app built with React & Redux at the frontend.</p>
+<br />
 
-![Bookstore Desktop version](https://user-images.githubusercontent.com/25479050/73641302-1ae94c80-4670-11ea-8933-ab6e6df2bcbc.gif)
+## Table of Contents
 
-With the Bookstore the following functions can be achieved:
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+- [Features](#features)
+- [Built With](#built-with)
+- [Testing](#testing)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Author](#author)
+- [🤝 Contributing](#-contributing)
+- [Show your support](#show-your-support)
+- [📝 License](#-license)
+
+## About The Project
+
+This is the backend implementation of the bookstore project commissioned by Magic-books
+Inc (Magic-books is based in Germany). I and my partner at Microverse has been
+requested to build both the front-end and the back-end of an application that
+will help Magic-books organize and manage their bookstore. The application is required to be fast,
+dynamic and responsive to their actions. As a result, my partner and I decided to settle with
+building it with React & Redux at the frontend and Rails for the backend. This
+is the backend implementation of the project as built by me. The front-end
+repository of the project can be found [here](https://github.com/tundeiness/Bookstore).
+
+![Bookstore Desktop
+version](https://user-images.githubusercontent.com/25479050/73641302-1ae94c80-4670-11ea-8933-ab6e6df2bcbc.gif)
+
+
+## Features
+
+The Bookstore the following functions:
 
 - Add book,
 - Remove book, and
 - Filter books based on categories
 
+
 ## Built With
 
 * Ruby
 * Rails
+
+
+## Testing
+
+This project was tested with:
+
+* RSpec
+* Capybara
+
 
 ## Live Demo
 
@@ -48,7 +88,7 @@ $ bundle install
 $ rails server
 ```
 
-> If it doesn't open automatically, open `http://localhost:3001` using your browser.
+> If it doesn't open automatically, open `http://localhost:3000` using your browser.
 
 ## Author
 
