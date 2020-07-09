@@ -13,7 +13,7 @@
 - [Testing](#testing)
 - [Live Demo](#live-demo)
 - [Getting Started](#getting-started)
-- [Author](#author)
+- [Contact](#contact)
 - [🤝 Contributing](#-contributing)
 - [Show your support](#show-your-support)
 - [📝 License](#-license)
@@ -56,6 +56,8 @@ This project was tested with:
 * Factory-Bot
 * Capybara
 
+To run the test run `rspec -fd`
+
 
 ## Live Demo
 
@@ -91,11 +93,12 @@ $ rails server
 
 > If it doesn't open automatically, open `http://localhost:3000` using your browser.
 
-## Author
+## Contact
 
 👤 **Tunde Oretade**
    - Github: [@tundeiness](https://github.com/tundeiness)
    - LinkedIn: [Tunde Oretade](https://www.linkedin.com/in/tundeoretade/)
+   - Email: tundeiness@yahoo.co.uk
 
 
 
