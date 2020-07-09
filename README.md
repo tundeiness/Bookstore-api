@@ -56,7 +56,7 @@ This project was tested with:
 * Factory-Bot
 * Capybara
 
-To run the test run `rspec -fd`
+To run the rspec test suite run `rspec -fd`
 
 
 ## Live Demo
